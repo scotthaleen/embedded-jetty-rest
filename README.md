@@ -41,6 +41,6 @@ $ java -cp .:lib/* com.embedded.WebServer
 $ curl http://localhost:9009/echo/hi
 GET Echo: hi
 
-$ curl -X POST -H "content-type: application/json" -d '{"test": "hi"}' http://localhost:9009/echo
+$ curl -X POST -H "content-type: application/json" -d '{"echo": "hi"}' http://localhost:9009/echo
 POST Echo: hi
 ```
