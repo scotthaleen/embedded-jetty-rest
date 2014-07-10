@@ -31,7 +31,7 @@ public class Index {
     @Path("/echo")
     @Consumes("application/json")
     public Response echoPost(Map<String, String> postBody){
-        String sz = postBody.get("test");
+        String sz = postBody.get("echo");
         return Response.status(200).entity("POST Echo: " + sz).build();
     }
 }
