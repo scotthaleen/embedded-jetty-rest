@@ -2,18 +2,18 @@
 
 # embedded jetty rest
 
-sample implementation based on
+sample implementation based on <br />
 [http://news-anand.blogspot.com/2012/05/today-i-am-going-tell-you-how-to-create.html](http://news-anand.blogspot.com/2012/05/today-i-am-going-tell-you-how-to-create.html)
 
 
-## build
+### build
 
 ```
 mvn clean package
 ```
 
-## run 
+### run 
 
 ```
-java -cp target/lib/*:target/lib/
+java -cp target/lib/*:target/rest.jar com.embedded.WebServer 
 ```
