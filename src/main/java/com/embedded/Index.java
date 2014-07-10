@@ -2,7 +2,6 @@ package com.embedded;
 
 import java.io.File;
 import java.net.URISyntaxException;
-import java.util.HashMap;
 import java.util.Map;
 import javax.activation.MimetypesFileTypeMap;
 import javax.ws.rs.Consumes;
