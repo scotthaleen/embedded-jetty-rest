@@ -2,10 +2,14 @@ package com.embedded;
 
 import java.io.File;
 import java.net.URISyntaxException;
+import java.util.HashMap;
+import java.util.Map;
 import javax.activation.MimetypesFileTypeMap;
+import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 
@@ -19,13 +23,16 @@ public class Index {
         return Response.ok(f, mt).build();
     }
     @GET
-    @Path("/hello")
-    public Response  helloGet() {
-        return Response.status(200).entity("HTTP GET method called").build();
+    @Path("/echo/{msg}")
+    public Response  echoGet(@PathParam("msg") String msg) {
+        return Response.status(200).entity("GET Echo: " + msg).build();
     }
+
     @POST
-    @Path("/hello")
-    public Response  helloPost(){
-        return Response.status(200).entity("HTTP POST method called").build();
+    @Path("/echo")
+    @Consumes("application/json")
+    public Response echoPost(Map<String, String> postBody){
+        String sz = postBody.get("test");
+        return Response.status(200).entity("POST Echo: " + sz).build();
     }
 }
