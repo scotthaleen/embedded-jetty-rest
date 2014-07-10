@@ -1,19 +1,26 @@
 package com.embedded;
 
+/*
+  for text/html files
 import java.io.File;
 import java.net.URISyntaxException;
-import java.util.Map;
+import javax.ws.rs.Produces;
 import javax.activation.MimetypesFileTypeMap;
+*/
+import java.util.Map;
+
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
-import javax.ws.rs.Produces;
+
 import javax.ws.rs.core.Response;
 
 @Path("/")
 public class Index {
+    /*
+    for html files
     @GET
     @Produces("text/html")
     public Response  index() throws URISyntaxException {
@@ -21,6 +28,8 @@ public class Index {
         String mt = new MimetypesFileTypeMap().getContentType(f);
         return Response.ok(f, mt).build();
     }
+    */
+
     @GET
     @Path("/echo/{msg}")
     public Response  echoGet(@PathParam("msg") String msg) {
