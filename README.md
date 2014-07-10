@@ -14,7 +14,7 @@ mvn clean package
 mvn assembly:assembly
 ```
 
-This will produce a deployable tar.gz
+This will produce a deployable tar.gz in the _target/_ folder
 (**web-server-{VERSION}-bundle.tar.gz**)
 
 ### deploy
