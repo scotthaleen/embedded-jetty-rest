@@ -13,7 +13,7 @@ mvn assembly:assembly
 ```
 
 This will produce a deployable tar.gz
-(web-server-{VERSION}-bundle.tar.gz)
+(**web-server-{VERSION}-bundle.tar.gz**)
 
 ### deploy
 
@@ -30,7 +30,7 @@ $ ./run.sh
 or 
 
 ```
-$java -cp .:lib/* com.embedded.WebServer 
+$ java -cp .:lib/* com.embedded.WebServer 
 ```
 
 ### test
