@@ -15,7 +15,7 @@ mvn assembly:assembly
 ```
 
 This will produce a deployable tar.gz in the _target/_ folder
-(**web-server-{VERSION}-bundle.tar.gz**)
+(**target/web-server-{VERSION}-bundle.tar.gz**)
 
 ### deploy
 
