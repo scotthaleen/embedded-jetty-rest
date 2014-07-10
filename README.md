@@ -1,5 +1,4 @@
 
-
 # embedded jetty rest
 
 sample implementation based on <br />
@@ -10,12 +9,28 @@ sample implementation based on <br />
 
 ```
 mvn clean package
+mvn assembly:assembly
+```
+
+This will produce a deployable tar.gz
+(web-server-{VERSION}-bundle.tar.gz)
+
+### deploy
+
+```
+$ tar -zxvf web-server-{VERSION}-bundle.tar.gz
 ```
 
 ### run 
 
 ```
-java -cp target/lib/*:target/rest.jar com.embedded.WebServer 
+$ chmod +x run.sh
+$ ./run.sh
+```
+or 
+
+```
+$java -cp .:lib/* com.embedded.WebServer 
 ```
 
 ### test
