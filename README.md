@@ -1,5 +1,5 @@
 
-# embedded jetty rest
+# Embedded Jetty REST
 
 [![Build Status](https://travis-ci.org/scotthaleen/embedded-jetty-rest.svg?branch=master)](http://travis-ci.org/scotthaleen/embedded-jetty-rest)
 
