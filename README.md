@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.org/scotthaleen/embedded-jetty-rest.svg?branch=master)](http://travis-ci.org/scotthaleen/embedded-jetty-rest)
 
 sample implementation based on <br />
-- [http://news-anand.blogspot.com/2012/05/today-i-am-going-tell-you-how-to-create.html](http://news-anand.blogspot.com/2012/05/today-i-am-going-tell-you-how-to-create.html)
+- [http://news-anand.blogspot.com/2012/05/today-i-am-going-tell-you-how-to-create.html](https://web.archive.org/web/20150224015218/http://news-anand.blogspot.com/2012/05/today-i-am-going-tell-you-how-to-create.html)
 - [http://examples.javacodegeeks.com/enterprise-java/rest/resteasy/json-example-with-resteasy-jackson/](http://examples.javacodegeeks.com/enterprise-java/rest/resteasy/json-example-with-resteasy-jackson/)
 
 ### build
